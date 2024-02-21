@@ -1,0 +1,24 @@
+{
+  "app name": "Wed",
+"validator default error message": "Please check the data entered",
+ 
+  "Centers": "Centers",
+ 
+  "home": "Home",
+ 
+  "advice": "نصائح وارشادات عامة ",
+  "areAboutToMarried": "المقبلين على الزواج", 
+   "consultingSolutions": "استشارات وحلول طارئة", 
+   "delayedMarriage": "التأخر على الزواج", 
+   "divorce": "المطلقين", 
+   "goingDifficultPeriod": "المرور بمرحلة صعبة", 
+    "newlyMarried": "المتزوجين حديثا", 
+    "parents": "الأولياء", 
+    "rating": "التقييم والمتابعة الإجتماعية"
+
+
+
+
+
+
+}
