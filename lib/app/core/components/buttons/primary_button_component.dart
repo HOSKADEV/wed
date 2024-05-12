@@ -2,15 +2,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
+import 'package:wed/app/core/constants/icons_assets_constants.dart';
 import 'package:wed/app/core/styles/colors.dart';
 import 'package:wed/app/core/styles/text_styles.dart';
 
 class PrimaryButtonComponent extends StatelessWidget {
-  const PrimaryButtonComponent(
+  PrimaryButtonComponent(
       {Key? key,
       required this.onTap,
       required this.text,
+      this.icon,
       this.backgroundColor,
       this.textColor,
       this.borderColor,
@@ -25,6 +28,7 @@ class PrimaryButtonComponent extends StatelessWidget {
   @required
   final Function onTap;
   final String text;
+  String? icon;
   final Color? backgroundColor;
   final Gradient? gradient;
   final Color? textColor;
@@ -68,35 +72,39 @@ class PrimaryButtonComponent extends StatelessWidget {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
           backgroundColor: MainColors.transparentColor,
         ),
-        onPressed: () {},
+        onPressed: () => onTap(),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            if (isLoading == true)
-              LoadingAnimationWidget.inkDrop(
-                color: MainColors.whiteColor,
-                size: 30.r,
+            if (icon != null)
+              Row(
+                children: [
+                  SizedBox(
+                    width: 20.h,
+                  ),
+                  SvgPicture.asset(
+                    color: MainColors.whiteColor,
+                    icon!,
+                    height: 60.h,
+                    width: 60.h,
+                  ),
+                ],
               ),
-            if (isLoading == false || isLoading == null)
-              Expanded(
-                child: Center(
-                    child: Row(
-                  textBaseline: TextBaseline.ideographic,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      text,
-                      style: TextStyles.buttonTextStyle(context).copyWith(
-                        color: textColor ?? MainColors.whiteColor,
-                      ),
-                    ),
-                    // SvgPicture.asset(IconsAssetsConstants.drrowDownIcon,
-                    //     color: MainColors.whiteColor),
-                  ],
-                )),
-              ),
+            Row(
+              textBaseline: TextBaseline.ideographic,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  text,
+                  style: TextStyles.buttonTextStyle(context).copyWith(
+                      color: textColor ?? MainColors.whiteColor,
+                      fontSize: 20.sp),
+                ),
+              ],
+            ),
+            SizedBox()
           ],
         ),
       ),

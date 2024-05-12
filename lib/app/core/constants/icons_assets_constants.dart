@@ -20,4 +20,5 @@ class IconsAssetsConstants {
   static const String arrowLeftIcon = "assets/icons/arrow_left_icon.svg";
   static const String closeIcon = "assets/icons/close_icon.svg";
   static const String drrowDownIcon = "assets/icons/drrow_down.svg";
+  static const String whatsapp = "assets/icons/whatsapp.svg";
 }

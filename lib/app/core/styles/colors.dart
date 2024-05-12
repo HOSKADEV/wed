@@ -25,8 +25,11 @@ class MainColors {
 
   static const Color primaryColor =
       materialColors.Color.fromARGB(255, 255, 255, 255);
+  static const Color greenColor =
+      materialColors.Color.fromARGB(255, 0, 135, 47);
   static const Color whiteColor = materialColors.Colors.white;
   static const Color blackColor = materialColors.Color(0xFF444444);
+  static const gryColor = materialColors.Color.fromARGB(255, 187, 187, 187);
   static const Color transparentColor = materialColors.Colors.transparent;
 
   static const primaryGradientColor = LinearGradient(

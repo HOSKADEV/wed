@@ -9,9 +9,9 @@ abstract class Routes {
 
   static const HOME = _Paths.HOME;
 
-  static const CENTERS = _Paths.CENTERS;
+  static const DETAILS = _Paths.DETAILS;
 
-  static const CENTER_DETAILS = _Paths.CENTER_DETAILS;
+  // static const CENTER_DETAILS = _Paths.CENTER_DETAILS;
 }
 
 abstract class _Paths {
@@ -21,7 +21,7 @@ abstract class _Paths {
 
   static const HOME = '/home';
 
-  static const CENTERS = '/centers';
+  static const DETAILS = '/details';
 
-  static const CENTER_DETAILS = '/center-details';
+  // static const CENTER_DETAILS = '/center-details';
 }

@@ -1,8 +1,8 @@
 // ignore_for_file: constant_identifier_names
 
 import 'package:get/get.dart';
-import 'package:wed/app/modules/categories/bindings/categories_binding.dart';
-import 'package:wed/app/modules/categories/views/categories_view.dart';
+import 'package:wed/app/modules/details/bindings/details_binding.dart';
+import 'package:wed/app/modules/details/views/details_view.dart';
 
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
@@ -24,9 +24,9 @@ class AppPages {
       binding: SplashBinding(),
     ),
     GetPage(
-      name: _Paths.CENTERS,
-      page: () => const CategoriesView(),
-      binding: CategoriesBinding(),
+      name: _Paths.DETAILS,
+      page: () => const DetailsView(),
+      binding: DetailsBinding(),
     ),
     GetPage(
       name: _Paths.HOME,

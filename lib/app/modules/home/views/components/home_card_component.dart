@@ -4,9 +4,9 @@ import 'package:get/get.dart';
 
 import 'package:wed/app/core/styles/colors.dart';
 import 'package:wed/app/core/styles/text_styles.dart';
-import 'package:wed/app/modules/categories/controllers/categories_controller.dart';
+import 'package:wed/app/modules/details/controllers/details_controller.dart';
 
-class HomeCardComponent extends GetView<CategoriesController> {
+class HomeCardComponent extends GetView<DetailsController> {
   const HomeCardComponent({
     required this.indexOfpage,
     super.key,
