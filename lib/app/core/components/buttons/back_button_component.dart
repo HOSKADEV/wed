@@ -36,9 +36,9 @@ class BackButtonComponent extends StatelessWidget {
           ]),
       child: TextButton(
         style: TextButton.styleFrom(
+          foregroundColor: MainColors.primaryColor,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
           backgroundColor: MainColors.transparentColor,
-          primary: MainColors.primaryColor,
         ),
         onPressed: () => (onTap == null) ? Get.back() : onTap!(),
         child: Center(
