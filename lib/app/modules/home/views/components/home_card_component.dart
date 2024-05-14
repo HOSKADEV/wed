@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import 'package:BIMARiSTAN/app/core/styles/colors.dart';
-import 'package:BIMARiSTAN/app/core/styles/text_styles.dart';
-import 'package:BIMARiSTAN/app/modules/details/controllers/details_controller.dart';
+import 'package:HANINI/app/core/styles/colors.dart';
+import 'package:HANINI/app/core/styles/text_styles.dart';
+import 'package:HANINI/app/modules/details/controllers/details_controller.dart';
 
 class HomeCardComponent extends GetView<DetailsController> {
   const HomeCardComponent(

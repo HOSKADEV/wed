@@ -4,9 +4,9 @@
 // import 'package:get/get_core/src/get_main.dart';
 // import 'package:get/get_navigation/src/extension_navigation.dart';
 // import 'package:get/get_navigation/src/snackbar/snackbar.dart';
-// import 'package:BIMARiSTAN/app/core/constants/icons_assets_constants.dart';
-// import 'package:BIMARiSTAN/app/core/styles/colors.dart';
-// import 'package:BIMARiSTAN/app/core/styles/text_styles.dart';
+// import 'package:HANINI/app/core/constants/icons_assets_constants.dart';
+// import 'package:HANINI/app/core/styles/colors.dart';
+// import 'package:HANINI/app/core/styles/text_styles.dart';
 
 // class ToastComponent {
 //   void showToast(BuildContext context, {required String message, required ToastTypes type}) {

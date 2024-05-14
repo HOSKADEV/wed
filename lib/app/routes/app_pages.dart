@@ -1,12 +1,12 @@
 // ignore_for_file: constant_identifier_names
 
 import 'package:get/get.dart';
-import 'package:BIMARiSTAN/app/modules/description_view/bindings/description_binding.dart';
-import 'package:BIMARiSTAN/app/modules/description_view/views/description_view.dart';
-import 'package:BIMARiSTAN/app/modules/details/bindings/details_binding.dart';
-import 'package:BIMARiSTAN/app/modules/details/views/details_view.dart';
-import 'package:BIMARiSTAN/app/modules/sub_details/bindings/sub_details_binding.dart';
-import 'package:BIMARiSTAN/app/modules/sub_details/views/sub_details_view.dart';
+import 'package:HANINI/app/modules/description_view/bindings/description_binding.dart';
+import 'package:HANINI/app/modules/description_view/views/description_view.dart';
+import 'package:HANINI/app/modules/details/bindings/details_binding.dart';
+import 'package:HANINI/app/modules/details/views/details_view.dart';
+import 'package:HANINI/app/modules/sub_details/bindings/sub_details_binding.dart';
+import 'package:HANINI/app/modules/sub_details/views/sub_details_view.dart';
 
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';

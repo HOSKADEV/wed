@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:BIMARiSTAN/app/core/components/others/header_component.dart';
+import 'package:HANINI/app/core/components/others/header_component.dart';
 
-import 'package:BIMARiSTAN/app/core/constants/images_assets_constants.dart';
-import 'package:BIMARiSTAN/app/core/constants/strings_assets_constants.dart';
-import 'package:BIMARiSTAN/app/core/styles/colors.dart';
-import 'package:BIMARiSTAN/app/modules/details/controllers/details_controller.dart';
+import 'package:HANINI/app/core/constants/images_assets_constants.dart';
+import 'package:HANINI/app/core/constants/strings_assets_constants.dart';
+import 'package:HANINI/app/core/styles/colors.dart';
+import 'package:HANINI/app/modules/details/controllers/details_controller.dart';
 
-import 'package:BIMARiSTAN/app/routes/app_pages.dart';
+import 'package:HANINI/app/routes/app_pages.dart';
 
 import '../controllers/home_controller.dart';
 import 'components/home_card_component.dart';
@@ -58,7 +58,7 @@ class HomeView extends GetView<HomeController> {
                                       detailsController.listOfImage[index],
                                   onTap: () {
                                     print(index);
-                                    if (index == 3) {
+                                    if (index == 0) {
                                       Get.toNamed(Routes.Description);
                                     } else {
                                       Get.toNamed(Routes.DETAILS);

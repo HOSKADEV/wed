@@ -1,7 +1,7 @@
 // ignore_for_file: unnecessary_overrides
 
 import 'package:get/get.dart';
-import 'package:BIMARiSTAN/app/routes/app_pages.dart';
+import 'package:HANINI/app/routes/app_pages.dart';
 
 class SplashController extends GetxController {
   @override

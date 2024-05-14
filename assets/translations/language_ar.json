@@ -1,14 +1,14 @@
 {
   "validator default error message": "الرجاء التحقق من البيانات المدخلة",
-  "app title": "الإستشارات الطبية",
+  "app title": "مرافقة المرضى",
 
  
-  "home": "الإستشارات الطبية",
+  "home": "مرافقة المرضى",
   
-  "listTitle1": "الإستشارات",
-  "listTitle2": "تكفل", 
-   "listTitle3": "ساهم معنا", 
-   "listTitle4": "مقالات طبية"
+  "listTitle1": "",
+  "listTitle2": "حجز المواعيد الطبية", 
+   "listTitle3": "حجز وسائل النقل", 
+   "listTitle4": "حجز مقر للإقامة"
 
 
 

@@ -1,8 +1,8 @@
 // ignore_for_file: unnecessary_overrides
 
 import 'package:get/get.dart';
-import 'package:BIMARiSTAN/app/core/constants/images_assets_constants.dart';
-import 'package:BIMARiSTAN/app/core/constants/strings_assets_constants.dart';
+import 'package:HANINI/app/core/constants/images_assets_constants.dart';
+import 'package:HANINI/app/core/constants/strings_assets_constants.dart';
 
 class DescriptionController extends GetxController {
   RxInt indexOfpage = 0.obs;

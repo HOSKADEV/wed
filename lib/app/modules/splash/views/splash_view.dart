@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:BIMARiSTAN/app/core/constants/logos_assets_constants.dart';
-import 'package:BIMARiSTAN/app/core/styles/colors.dart';
-import 'package:BIMARiSTAN/app/core/styles/text_styles.dart';
+import 'package:HANINI/app/core/constants/logos_assets_constants.dart';
+import 'package:HANINI/app/core/styles/colors.dart';
+import 'package:HANINI/app/core/styles/text_styles.dart';
 
 import '../controllers/splash_controller.dart';
 
@@ -13,7 +13,7 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MainColors.blackColor,
+      backgroundColor: MainColors.whiteColor,
       body: SizedBox(
         width: double.infinity,
         child: Stack(
@@ -29,9 +29,9 @@ class SplashView extends GetView<SplashController> {
             Positioned(
                 child: Center(
                     child: Container(
-                        color: MainColors.whiteColor,
+                        // color: MainColors.whiteColor,
                         child: Image.asset(LogosAssetsConstants.appLogo,
-                            color: MainColors.blackColor, width: 300.w)))),
+                            width: 300.w)))),
             Positioned(
                 bottom: 20.h,
                 child: Container(
@@ -44,8 +44,7 @@ class SplashView extends GetView<SplashController> {
                           " 🤍 By HoskaDev 🤍",
                           style: TextStyles.mediumLabelTextStyle(context)
                               .copyWith(
-                                  color: MainColors.whiteColor,
-                                  fontSize: 18.sp),
+                                  color: Color(0xFFBE8C50), fontSize: 18.sp),
                         ),
                       ],
                     ))),

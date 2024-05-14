@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
-import 'package:BIMARiSTAN/app/core/styles/colors.dart';
-import 'package:BIMARiSTAN/app/core/styles/text_styles.dart';
-import 'package:BIMARiSTAN/app/core/styles/theme_styles.dart';
+import 'package:HANINI/app/core/styles/colors.dart';
+import 'package:HANINI/app/core/styles/text_styles.dart';
+import 'package:HANINI/app/core/styles/theme_styles.dart';
 
 class DateInputComponent extends StatelessWidget {
   Widget? child;

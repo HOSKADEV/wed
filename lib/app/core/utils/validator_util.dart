@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:string_validator/string_validator.dart';
-import 'package:BIMARiSTAN/app/core/constants/strings_assets_constants.dart';
+import 'package:HANINI/app/core/constants/strings_assets_constants.dart';
 
 class ValidatorUtil {
   static String? validNullable(var x, {String? customMessage}) {
