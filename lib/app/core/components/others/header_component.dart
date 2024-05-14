@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:wed/app/core/components/buttons/back_button_component.dart';
-import 'package:wed/app/core/styles/colors.dart';
-import 'package:wed/app/core/styles/text_styles.dart';
+import 'package:BIMARiSTAN/app/core/components/buttons/back_button_component.dart';
+import 'package:BIMARiSTAN/app/core/styles/colors.dart';
+import 'package:BIMARiSTAN/app/core/styles/text_styles.dart';
 
 class HeaderComponent extends StatelessWidget implements PreferredSizeWidget {
   const HeaderComponent(

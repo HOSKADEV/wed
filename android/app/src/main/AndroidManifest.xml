@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hoskadev.wed">
+    package="com.hoskadev.bimaristan">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="ود"
+        android:label="BIMARiSTAN"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

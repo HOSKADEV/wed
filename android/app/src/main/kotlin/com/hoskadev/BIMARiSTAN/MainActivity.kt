@@ -1,4 +1,4 @@
-package com.hoskadev.wed
+package com.hoskadev.bimaristan
 
 import io.flutter.embedding.android.FlutterActivity
 

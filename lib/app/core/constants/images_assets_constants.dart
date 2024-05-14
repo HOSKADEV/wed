@@ -4,23 +4,22 @@ class ImagesAssetsConstants {
   // static const String specialtiesImage = "assets/images/specialties_image.jpg";
   // static const String academicLevelsImage =
   //     "assets/images/academic_levels_image.png";
-  static const String advice = "assets/images/advice.jpg";
-  static const String areAboutToMarried =
-      "assets/images/are_about_to_married.jpg";
+  // static const String advice = "assets/images/advice.jpg";
+  // static const String areAboutToMarried =
+  //     "assets/images/are_about_to_married.jpg";
 
-  static const String consultingSolutions =
-      "assets/images/consulting_solutions.jpeg";
+  // static const String consultingSolutions =
+  //     "assets/images/consulting_solutions.jpeg";
 
-  static const String delayedMarriage = "assets/images/delayed_marriage.jpg";
+  // static const String delayedMarriage = "assets/images/delayed_marriage.jpg";
 
-  static const String divorce = "assets/images/divorce.jpg";
+  // static const String divorce = "assets/images/divorce.jpg";
 
-  static const String goingDifficultPeriod =
-      "assets/images/going_difficult_period.jpg";
+  static const String listImages1 = "assets/images/list1.jpg";
 
-  static const String newlyMarried = "assets/images/newly_married.jpg";
-
-  static const String parents = "assets/images/parents.jpg";
-
-  static const String rating = "assets/images/rating.jpg";
+  static const String listImages2 = "assets/images/list2.jpg";
+  static const String listImages3 = "assets/images/list3.jpeg";
+  static const String listImages4 = "assets/images/list4.jpeg";
+  static const String list4_1 = "assets/images/list4_1.jpg";
+  static const String list4_2 = "assets/images/list4_2.jpg";
 }

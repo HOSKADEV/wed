@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:wed/app/core/styles/theme_styles.dart';
-import 'package:wed/app/core/utils/translations/translation.dart';
-import 'package:wed/app/core/utils/translations/translations_assets_reader.dart';
+import 'package:BIMARiSTAN/app/core/styles/theme_styles.dart';
+import 'package:BIMARiSTAN/app/core/utils/translations/translation.dart';
+import 'package:BIMARiSTAN/app/core/utils/translations/translations_assets_reader.dart';
 
 import 'app/routes/app_pages.dart';
 
