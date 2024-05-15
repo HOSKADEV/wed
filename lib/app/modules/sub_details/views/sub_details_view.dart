@@ -53,7 +53,7 @@ class SubDetailsView extends GetView<SubDetailsController> {
   }
 
   void launchAnotherApp() async {
-    var phoneNumber = "+213697484280";
+    var phoneNumber = "+213673625414";
     var url = 'https://wa.me/$phoneNumber';
     if (!await launchUrl(Uri.parse(url),
         mode: LaunchMode.externalApplication)) {

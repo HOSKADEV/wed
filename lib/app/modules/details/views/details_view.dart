@@ -1,3 +1,5 @@
+import 'package:HANINI/app/core/constants/images_assets_constants.dart';
+import 'package:HANINI/app/core/constants/strings_assets_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,39 +28,58 @@ class DetailsView extends GetView<DetailsController> {
         title: controller.listOfTitle[controller.indexOfpage.value],
       ),
       body: SafeArea(
-        child: SizedBox(
-          width: double.infinity,
-          child: controller
-                      .createLists()[controller.indexOfpage.value]
-                      .length ==
-                  1
-              ? Container(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.all(10.h),
-                          child: Container(
-                            constraints: BoxConstraints(minHeight: 400.h),
-                            width: double.infinity,
-                            child: DetalisCardComponent(
-                                title: controller
-                                    .listOfTitle[controller.indexOfpage.value],
-                                description: controller
-                                    .createLists()[controller.indexOfpage.value]
-                                        [0]
-                                    .toString(),
-                                icon: controller
-                                    .listOfImage[controller.indexOfpage.value],
-                                color: MainColors.whiteColor),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 25.h,
-                        ),
-                        controller.indexOfpage.value == 0
-                            ? SizedBox()
-                            : Padding(
+        child: controller.indexOfpage.value == 4
+            ? Container(
+                height: 820.h,
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: EdgeInsets.all(10.h),
+                    child: Container(
+                      constraints: BoxConstraints(minHeight: 400.h),
+                      width: double.infinity,
+                      child: DetalisCardComponent(
+                          title: StringsAssetsConstants.listTitle1,
+                          description: controller.listTitle1[0],
+                          icon: ImagesAssetsConstants.listImages1,
+                          color: MainColors.whiteColor),
+                    ),
+                  ),
+                ),
+              )
+            : SizedBox(
+                width: double.infinity,
+                child: controller
+                            .createLists()[controller.indexOfpage.value]
+                            .length ==
+                        1
+                    ? Container(
+                        child: SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.all(10.h),
+                                child: Container(
+                                  constraints: BoxConstraints(minHeight: 400.h),
+                                  width: double.infinity,
+                                  child: DetalisCardComponent(
+                                      title: controller.listOfTitle[
+                                          controller.indexOfpage.value],
+                                      description: controller
+                                          .createLists()[
+                                              controller.indexOfpage.value][0]
+                                          .toString(),
+                                      icon: controller.listOfImage[
+                                          controller.indexOfpage.value],
+                                      color: MainColors.whiteColor),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 25.h,
+                              ),
+                              // controller.indexOfpage.value == 0
+                              // ? SizedBox()
+                              // :
+                              Padding(
                                 padding: EdgeInsets.all(15.h),
                                 child: PrimaryButtonComponent(
                                     icon: IconsAssetsConstants.whatsapp,
@@ -70,52 +91,54 @@ class DetailsView extends GetView<DetailsController> {
                                     text: controller.textOfBottonWhatsApp[
                                         controller.indexOfpage.value]),
                               )
-                      ],
-                    ),
-                  ),
-                )
-              : Column(
-                  children: [
-                    Expanded(
-                        child: ListView.separated(
-                      physics: const BouncingScrollPhysics(),
-                      padding: EdgeInsets.symmetric(
-                          horizontal: 25.w, vertical: 30.h),
-                      itemBuilder: (context, index) {
-                        return PrimaryButtonComponent(
-                            borderColor: MainColors.gryColor.withOpacity(0.6),
-                            height: 75.h,
-                            textColor: MainColors.blackColor,
-                            onTap: () async {
-                              print(controller.indexListOflist1[index]);
-                              if (controller.indexListOflist1[index] <= 1) {
-                                launchAnotherApp();
-                              } else {
-                                // subDetailsController.indexOfpage.value = 0;
-                                Get.toNamed(Routes.SUBDETAILS);
-                              }
+                            ],
+                          ),
+                        ),
+                      )
+                    : Column(
+                        children: [
+                          Expanded(
+                              child: ListView.separated(
+                            physics: const BouncingScrollPhysics(),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 25.w, vertical: 30.h),
+                            itemBuilder: (context, index) {
+                              return PrimaryButtonComponent(
+                                  borderColor:
+                                      MainColors.gryColor.withOpacity(0.6),
+                                  height: 75.h,
+                                  textColor: MainColors.blackColor,
+                                  onTap: () async {
+                                    print(controller.indexListOflist1[index]);
+                                    if (controller.indexListOflist1[index] <=
+                                        1) {
+                                      launchAnotherApp();
+                                    } else {
+                                      // subDetailsController.indexOfpage.value = 0;
+                                      Get.toNamed(Routes.SUBDETAILS);
+                                    }
+                                  },
+                                  text: controller
+                                      .createLists()[
+                                          controller.indexOfpage.value][index]
+                                      .toString());
                             },
-                            text: controller
+                            separatorBuilder: (context, index) {
+                              return SizedBox(height: 15.h);
+                            },
+                            itemCount: controller
                                 .createLists()[controller.indexOfpage.value]
-                                    [index]
-                                .toString());
-                      },
-                      separatorBuilder: (context, index) {
-                        return SizedBox(height: 15.h);
-                      },
-                      itemCount: controller
-                          .createLists()[controller.indexOfpage.value]
-                          .length,
-                    )),
-                  ],
-                ),
-        ),
+                                .length,
+                          )),
+                        ],
+                      ),
+              ),
       ),
     );
   }
 
   void launchAnotherApp() async {
-    var phoneNumber = "+213697484280";
+    var phoneNumber = "+213673625414";
     var url = 'https://wa.me/$phoneNumber';
     if (!await launchUrl(Uri.parse(url),
         mode: LaunchMode.externalApplication)) {

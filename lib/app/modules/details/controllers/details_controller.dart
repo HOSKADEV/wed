@@ -6,32 +6,34 @@ import 'package:HANINI/app/core/constants/strings_assets_constants.dart';
 
 class DetailsController extends GetxController {
   RxList<String> textOfBottonWhatsApp = [
-    "",
     "اطلب الان واحجز موعد مع طبيبك",
     "لحجز وسلة نقل اطلب الان",
     "لحجز مقر للإقامة تواصل معنا ",
+    "تواصل معنا واطلب وجبتك الان ",
   ].obs;
 
 //============== رقم الصفحة ============================
   RxInt indexOfpage = 0.obs;
 //=== قائمة بها مجموعة القوائم الموجودة في التطبيق ===
   RxList<RxList<String>> createLists() {
-    return [listTitle1, listTitle2, listTitle3, listTitle4].obs;
+    return [listTitle2, listTitle3, listTitle4, listTitle5, listTitle1].obs;
   }
 
 //================ قائمة العناوين ====================
   RxList<String> listOfTitle = [
-    StringsAssetsConstants.listTitle1,
     StringsAssetsConstants.listTitle2,
     StringsAssetsConstants.listTitle3,
     StringsAssetsConstants.listTitle4,
+    StringsAssetsConstants.listTitle5,
+    StringsAssetsConstants.listTitle1,
   ].obs;
 //================ قائمة الصور ======================
   RxList<String> listOfImage = [
-    ImagesAssetsConstants.listImages1, //1
-    ImagesAssetsConstants.listImages2, //2
-    ImagesAssetsConstants.listImages3, //3
-    ImagesAssetsConstants.listImages4, //4
+    ImagesAssetsConstants.listImages2, //1
+    ImagesAssetsConstants.listImages3, //2
+    ImagesAssetsConstants.listImages4, //3
+    ImagesAssetsConstants.listImages5,
+    ImagesAssetsConstants.listImages1, //4
   ].obs;
 //==================  1  ====================
   RxList<String> listTitle1 = [
@@ -91,7 +93,10 @@ class DetailsController extends GetxController {
     "  مع خدمة هنيني\n"
         "أصبح حجز مكان الإقامة أكثر سهولة وراحة من أي وقت مضى. تواصل معنا عبر الواتساب، وسنقوم بالعثور على المكان المثالي الذي يناسب احتياجاتك وعدد الأفراد المرافقين لك. لا تتردد في الاتصال بنا للحصول على أفضل تجربة إقامة!\n"
   ].obs;
-
+  RxList<String> listTitle5 = [
+    "  مع خدمة هنيني\n"
+        "أصبح طلب المأكولات والوجبات أمرًا في غاية السهولة والراحة. ما عليك سوى التواصل معنا عبر الواتساب، وسنقوم بتقديم أفضل الخيارات التي تتناسب مع ذوقك ومتطلباتك . لا تتردد في الاتصال بنا للاستمتاع بأفضل تجربة طعام"
+  ].obs;
   RxBool isListVisible = false.obs;
 
   @override

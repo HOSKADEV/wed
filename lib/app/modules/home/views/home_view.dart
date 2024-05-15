@@ -19,30 +19,54 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     DetailsController detailsController = Get.put(DetailsController());
     return Scaffold(
-        appBar: HeaderComponent(
-          title: StringsAssetsConstants.home,
-          isBack: false,
-        ),
-        backgroundColor: MainColors.backgroundColor(context),
-        body: SafeArea(
-          bottom: false,
+      appBar: HeaderComponent(
+        title: StringsAssetsConstants.home,
+        isBack: false,
+      ),
+      backgroundColor: MainColors.backgroundColor(context),
+      body: SafeArea(
+        bottom: false,
+        child: SizedBox(
+          width: double.infinity,
+          height: 820.h,
           child: SingleChildScrollView(
-            physics: const BouncingScrollPhysics(),
-            child: SizedBox(
-              width: double.infinity,
-              height: 820.h,
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 50.h,
+            physics: NeverScrollableScrollPhysics(),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 10.h,
+                ),
+                Container(
+                  child: Padding(
+                    padding: EdgeInsets.all(5.h),
+                    child: HomeCardComponent(
+                      widthComponent: 410.w,
+                      indexOfpage: 4.obs,
+                      heightComponent: 180.h,
+                      backgroundGradient: MainColors.primaryGradientColor,
+                      title: "",
+                      backgroundImage: ImagesAssetsConstants.listImages1,
+                      onTap: () => Get.toNamed(Routes.DETAILS),
+                    ),
                   ),
-                  Container(
+                ),
+                SizedBox(
+                  height: 10.h,
+                ),
+                Padding(
+                  padding: EdgeInsets.all(5.h),
+                  child: Container(
                     height: 770.h,
-                    child: ListView.separated(
-                      separatorBuilder: (context, index) => SizedBox(
-                        height: 20.h,
+                    child: GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
                       ),
-                      itemCount: detailsController.listOfImage.length,
+                      // separatorBuilder: (context, index) => SizedBox(
+                      //   height: 20.h,
+                      // ),
+                      physics: NeverScrollableScrollPhysics(),
+                      itemCount: detailsController.listOfImage.length - 1,
                       itemBuilder: (context, index) {
                         if (index == detailsController.listOfImage.length - 1) {
                           return Container(
@@ -89,10 +113,12 @@ class HomeView extends GetView<HomeController> {
                       },
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

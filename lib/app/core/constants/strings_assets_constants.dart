@@ -28,4 +28,8 @@ class StringsAssetsConstants {
   static String get listTitle4 {
     return "listTitle4".tr;
   }
+
+  static String get listTitle5 {
+    return "listTitle5".tr;
+  }
 }

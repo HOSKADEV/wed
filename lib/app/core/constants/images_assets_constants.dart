@@ -19,6 +19,7 @@ class ImagesAssetsConstants {
   static const String listImages2 = "assets/images/list2.jpg";
   static const String listImages3 = "assets/images/list3.jpg";
   static const String listImages4 = "assets/images/list4.jpg";
+  static const String listImages5 = "assets/images/list5.jpg";
   static const String list4_1 = "assets/images/list4_1.jpg";
   static const String list4_2 = "assets/images/list4_2.jpg";
 }
