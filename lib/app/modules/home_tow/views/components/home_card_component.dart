@@ -6,27 +6,28 @@ import 'package:SIDIA/app/core/styles/colors.dart';
 import 'package:SIDIA/app/core/styles/text_styles.dart';
 import 'package:SIDIA/app/modules/details/controllers/details_controller.dart';
 
-class HomeCardComponent extends GetView<DetailsController> {
-  const HomeCardComponent(
-      {required this.indexOfpage,
+class HomeTowCardComponent extends GetView<DetailsController> {
+  const HomeTowCardComponent(
+      {
+      // required this.indexOfpage,
       super.key,
-      required this.title,
+      // required this.title,
       required this.backgroundGradient,
       required this.backgroundImage,
-      required this.onTap,
+      // required this.onTap,
       this.widthComponent,
       this.heightComponent});
-  final RxInt indexOfpage;
+  // final RxInt indexOfpage;
   final String backgroundImage;
-  final String title;
+  // final String title;
   // final int count;
-  final Function onTap;
+  // final Function onTap;
   final Gradient backgroundGradient;
   final double? widthComponent, heightComponent;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => {controller.indexOfpage = indexOfpage, onTap()},
+      // onTap: () => {controller.indexOfpage = indexOfpage, onTap()},
       child: Container(
         height: heightComponent,
         width: widthComponent ?? 200.w, //371.w,
@@ -59,22 +60,22 @@ class HomeCardComponent extends GetView<DetailsController> {
                 opacity: 0.7,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: MainColors.blackColor.withOpacity(0.5),
-                    borderRadius: BorderRadius.circular(17.r),
+                    color: MainColors.blackColor.withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(10.r),
                   ),
                 ),
               ),
             ),
-            PositionedDirectional(
-              top: 15.h,
-              start: 10.w,
-              child: Text(
-                title,
-                style: TextStyles.mediumLabelTextStyle(context).copyWith(
-                  color: MainColors.whiteColor,
-                ),
-              ),
-            ),
+            // PositionedDirectional(
+            //   top: 15.h,
+            //   start: 10.w,
+            //   child: Text(
+            //     title,
+            //     style: TextStyles.mediumLabelTextStyle(context).copyWith(
+            //       color: MainColors.whiteColor,
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

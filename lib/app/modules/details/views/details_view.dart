@@ -1,21 +1,21 @@
-import 'package:HANINI/app/core/constants/images_assets_constants.dart';
-import 'package:HANINI/app/core/constants/strings_assets_constants.dart';
+import 'package:SIDIA/app/core/constants/images_assets_constants.dart';
+import 'package:SIDIA/app/core/constants/strings_assets_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:HANINI/app/core/components/buttons/primary_button_component.dart';
-import 'package:HANINI/app/core/components/others/header_component.dart';
-import 'package:HANINI/app/core/constants/icons_assets_constants.dart';
-import 'package:HANINI/app/core/styles/colors.dart';
-import 'package:HANINI/app/core/styles/text_styles.dart';
-import 'package:HANINI/app/modules/details/controllers/details_controller.dart';
-import 'package:HANINI/app/modules/details/views/components/detalis_component.dart';
-import 'package:HANINI/app/modules/home/views/components/home_card_component.dart';
-import 'package:HANINI/app/modules/sub_details/controllers/sub_details_controller.dart';
-import 'package:HANINI/app/routes/app_pages.dart';
+import 'package:SIDIA/app/core/components/buttons/primary_button_component.dart';
+import 'package:SIDIA/app/core/components/others/header_component.dart';
+import 'package:SIDIA/app/core/constants/icons_assets_constants.dart';
+import 'package:SIDIA/app/core/styles/colors.dart';
+import 'package:SIDIA/app/core/styles/text_styles.dart';
+import 'package:SIDIA/app/modules/details/controllers/details_controller.dart';
+import 'package:SIDIA/app/modules/details/views/components/detalis_component.dart';
+import 'package:SIDIA/app/modules/home/views/components/home_card_component.dart';
+import 'package:SIDIA/app/modules/sub_details/controllers/sub_details_controller.dart';
+import 'package:SIDIA/app/routes/app_pages.dart';
 
 class DetailsView extends GetView<DetailsController> {
   const DetailsView({super.key});

@@ -8,7 +8,7 @@ abstract class Routes {
   static const SPLASH = _Paths.SPLASH;
 
   static const HOME = _Paths.HOME;
-
+  static const HOMETOW = _Paths.HOMETOW;
   static const DETAILS = _Paths.DETAILS;
   static const SUBDETAILS = _Paths.SUBDETAILS;
   static const Description = _Paths.Description;
@@ -23,6 +23,7 @@ abstract class _Paths {
 
   static const HOME = '/home';
 
+  static const HOMETOW = '/home_tow';
   static const DETAILS = '/details';
   static const SUBDETAILS = '/sub_details';
   static const Description = '/Description';

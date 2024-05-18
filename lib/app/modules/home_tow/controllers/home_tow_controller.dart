@@ -1,14 +1,11 @@
 // ignore_for_file: unnecessary_overrides
 
 import 'package:get/get.dart';
-import 'package:SIDIA/app/routes/app_pages.dart';
 
-class SplashController extends GetxController {
+class HomeTowController extends GetxController {
+  final count = 0.obs;
   @override
   void onInit() {
-    Future.delayed(const Duration(seconds: 1), () {
-      Get.offAllNamed(Routes.HOMETOW);
-    });
     super.onInit();
   }
 
@@ -21,4 +18,6 @@ class SplashController extends GetxController {
   void onClose() {
     super.onClose();
   }
+
+  void increment() => count.value++;
 }

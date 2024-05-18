@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:HANINI/app/core/utils/translations/translations_assets_reader.dart';
+import 'package:SIDIA/app/core/utils/translations/translations_assets_reader.dart';
 
 class Translation extends Translations {
   @override

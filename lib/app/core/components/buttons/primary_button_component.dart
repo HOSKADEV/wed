@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:HANINI/app/core/constants/icons_assets_constants.dart';
-import 'package:HANINI/app/core/styles/colors.dart';
-import 'package:HANINI/app/core/styles/text_styles.dart';
+import 'package:SIDIA/app/core/constants/icons_assets_constants.dart';
+import 'package:SIDIA/app/core/styles/colors.dart';
+import 'package:SIDIA/app/core/styles/text_styles.dart';
 
 class PrimaryButtonComponent extends StatelessWidget {
   PrimaryButtonComponent(

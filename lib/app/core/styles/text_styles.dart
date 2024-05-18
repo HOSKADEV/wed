@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:HANINI/app/core/constants/fonts_family_assets_constants.dart';
+import 'package:SIDIA/app/core/constants/fonts_family_assets_constants.dart';
 
 import 'colors.dart';
 

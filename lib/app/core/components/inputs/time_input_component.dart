@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:HANINI/app/core/styles/colors.dart';
-import 'package:HANINI/app/core/styles/text_styles.dart';
+import 'package:SIDIA/app/core/styles/colors.dart';
+import 'package:SIDIA/app/core/styles/text_styles.dart';
 
 class TimeInputComponent extends StatelessWidget {
   Widget? child;

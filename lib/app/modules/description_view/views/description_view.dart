@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:HANINI/app/core/components/others/description_component.dart';
-import 'package:HANINI/app/core/components/others/header_component.dart';
-import 'package:HANINI/app/core/constants/icons_assets_constants.dart';
-import 'package:HANINI/app/core/styles/colors.dart';
-import 'package:HANINI/app/modules/description_view/controllers/description_controller.dart';
-import 'package:HANINI/app/modules/details/controllers/details_controller.dart';
-import 'package:HANINI/app/modules/details/views/components/detalis_component.dart';
+import 'package:SIDIA/app/core/components/others/description_component.dart';
+import 'package:SIDIA/app/core/components/others/header_component.dart';
+import 'package:SIDIA/app/core/constants/icons_assets_constants.dart';
+import 'package:SIDIA/app/core/styles/colors.dart';
+import 'package:SIDIA/app/modules/description_view/controllers/description_controller.dart';
+import 'package:SIDIA/app/modules/details/controllers/details_controller.dart';
+import 'package:SIDIA/app/modules/details/views/components/detalis_component.dart';
 
 class DescriptionView extends GetView<DescriptionController> {
   const DescriptionView({super.key});

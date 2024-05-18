@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:HANINI/app/core/styles/colors.dart';
-import 'package:HANINI/app/core/styles/text_styles.dart';
+import 'package:SIDIA/app/core/styles/colors.dart';
+import 'package:SIDIA/app/core/styles/text_styles.dart';
 
 class descriptionCardComponent extends StatelessWidget {
   final String title;
   final String description;
   final String icon;
   final Color color;
-
+  bool? isIcon;
   descriptionCardComponent(
       {required this.title,
       required this.description,
       required this.icon,
+      this.isIcon,
       required this.color});
 
   @override
@@ -42,23 +43,28 @@ class descriptionCardComponent extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
-            height: 170.h,
-            width: double.infinity,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(17.r),
-              child: Image.asset(
-                icon,
-                fit: BoxFit.fitWidth,
-              ),
-            ),
-          ),
+          isIcon == false
+              ? SizedBox()
+              : SizedBox(
+                  height: 170.h,
+                  width: double.infinity,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(17.r),
+                    child: Image.asset(
+                      icon,
+                      fit: BoxFit.fitWidth,
+                    ),
+                  ),
+                ),
           SizedBox(height: 10.h),
           Container(
             width: 400.w,
             child: Text(title,
-                style: TextStyles.mediumBodyTextStyle(context)
-                    .copyWith(fontSize: 23.sp, fontWeight: FontWeight.bold)),
+                style: TextStyles.mediumBodyTextStyle(context).copyWith(
+                  fontSize: 23.sp,
+                  fontWeight: FontWeight.bold,
+                  color: MainColors.greenColor,
+                )),
           ),
           SizedBox(height: 15.h),
           Container(

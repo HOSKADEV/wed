@@ -1,8 +1,8 @@
 // ignore_for_file: unnecessary_overrides
 
 import 'package:get/get.dart';
-import 'package:HANINI/app/core/constants/images_assets_constants.dart';
-import 'package:HANINI/app/core/constants/strings_assets_constants.dart';
+import 'package:SIDIA/app/core/constants/images_assets_constants.dart';
+import 'package:SIDIA/app/core/constants/strings_assets_constants.dart';
 
 class DetailsController extends GetxController {
   RxList<String> textOfBottonWhatsApp = [
@@ -65,7 +65,7 @@ class DetailsController extends GetxController {
         "0673625414\n"
         "-	البريد الإلكتروني\n"
         " hanini.3aas.2024@gmail.com\n"
-        "-	الفايسبوك\n"
+    // "-	الفايسبوك\n"
     // "\n"
     // "\n"
     // "-	التيلغرام\n"

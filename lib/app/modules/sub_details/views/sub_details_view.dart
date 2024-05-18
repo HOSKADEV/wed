@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:HANINI/app/core/components/buttons/primary_button_component.dart';
-import 'package:HANINI/app/core/components/others/header_component.dart';
-import 'package:HANINI/app/core/styles/colors.dart';
+import 'package:SIDIA/app/core/components/buttons/primary_button_component.dart';
+import 'package:SIDIA/app/core/components/others/header_component.dart';
+import 'package:SIDIA/app/core/styles/colors.dart';
 
-import 'package:HANINI/app/modules/sub_details/controllers/sub_details_controller.dart';
+import 'package:SIDIA/app/modules/sub_details/controllers/sub_details_controller.dart';
 
 class SubDetailsView extends GetView<SubDetailsController> {
   const SubDetailsView({super.key});

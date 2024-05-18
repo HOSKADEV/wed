@@ -1,4 +1,4 @@
-package com.hoskadev.hanini
+package com.hoskadev.sidia
 
 import io.flutter.embedding.android.FlutterActivity
 

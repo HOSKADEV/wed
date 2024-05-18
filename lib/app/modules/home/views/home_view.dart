@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:HANINI/app/core/components/others/header_component.dart';
+import 'package:SIDIA/app/core/components/others/header_component.dart';
 
-import 'package:HANINI/app/core/constants/images_assets_constants.dart';
-import 'package:HANINI/app/core/constants/strings_assets_constants.dart';
-import 'package:HANINI/app/core/styles/colors.dart';
-import 'package:HANINI/app/modules/details/controllers/details_controller.dart';
+import 'package:SIDIA/app/core/constants/images_assets_constants.dart';
+import 'package:SIDIA/app/core/constants/strings_assets_constants.dart';
+import 'package:SIDIA/app/core/styles/colors.dart';
+import 'package:SIDIA/app/modules/details/controllers/details_controller.dart';
 
-import 'package:HANINI/app/routes/app_pages.dart';
+import 'package:SIDIA/app/routes/app_pages.dart';
 
 import '../controllers/home_controller.dart';
 import 'components/home_card_component.dart';
@@ -34,7 +34,7 @@ class HomeView extends GetView<HomeController> {
             child: Column(
               children: [
                 SizedBox(
-                  height: 10.h,
+                  height: 50.h,
                 ),
                 Container(
                   child: Padding(
