@@ -1,14 +1,10 @@
 // ignore_for_file: constant_identifier_names
 
-import 'package:CNIQUE/app/modules/search/bindings/search_binding.dart';
-import 'package:CNIQUE/app/modules/search/views/search_view.dart';
+import 'package:dolani/app/modules/search_job/bindings/search_job_binding.dart';
+import 'package:dolani/app/modules/search_job/views/search_job_view.dart';
+import 'package:dolani/app/modules/search_workers/bindings/search_workers_binding.dart';
+import 'package:dolani/app/modules/search_workers/views/search_workers_view.dart';
 import 'package:get/get.dart';
-import 'package:CNIQUE/app/modules/description_view/bindings/description_binding.dart';
-import 'package:CNIQUE/app/modules/description_view/views/description_view.dart';
-import 'package:CNIQUE/app/modules/details/bindings/details_binding.dart';
-import 'package:CNIQUE/app/modules/details/views/details_view.dart';
-import 'package:CNIQUE/app/modules/sub_details/bindings/sub_details_binding.dart';
-import 'package:CNIQUE/app/modules/sub_details/views/sub_details_view.dart';
 
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
@@ -35,24 +31,14 @@ class AppPages {
       binding: HomeBinding(),
     ),
     GetPage(
-      name: _Paths.DETAILS,
-      page: () => const DetailsView(),
-      binding: DetailsBinding(),
+      name: _Paths.SEARCHJOB,
+      page: () => const SearchJobView(),
+      binding: SearchJobBinding(),
     ),
     GetPage(
-      name: _Paths.SUBDETAILS,
-      page: () => const SubDetailsView(),
-      binding: SubDetailsBinding(),
-    ),
-    GetPage(
-      name: _Paths.Description,
-      page: () => const DescriptionView(),
-      binding: DescriptionBinding(),
-    ),
-    GetPage(
-      name: _Paths.SEARCH,
-      page: () => const SearchView(),
-      binding: SearchBinding(),
+      name: _Paths.SEARCHWORKERS,
+      page: () => const SearchWorkersView(),
+      binding: SearchWorkersBinding(),
     ),
   ];
 }

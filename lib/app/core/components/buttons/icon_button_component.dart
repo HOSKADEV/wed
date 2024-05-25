@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:CNIQUE/app/core/styles/colors.dart';
+import 'package:dolani/app/core/styles/colors.dart';
 
 class IconButtonComponent extends StatelessWidget {
   const IconButtonComponent({

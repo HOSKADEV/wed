@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:CNIQUE/app/core/styles/theme_styles.dart';
-import 'package:CNIQUE/app/core/utils/translations/translation.dart';
-import 'package:CNIQUE/app/core/utils/translations/translations_assets_reader.dart';
+import 'package:dolani/app/core/styles/theme_styles.dart';
+import 'package:dolani/app/core/utils/translations/translation.dart';
+import 'package:dolani/app/core/utils/translations/translations_assets_reader.dart';
 
 import 'app/routes/app_pages.dart';
 
@@ -20,7 +20,7 @@ Future<void> main() async {
           transitionDuration: const Duration(milliseconds: 300),
           defaultTransition: Transition.circularReveal,
           debugShowCheckedModeBanner: false,
-          title: "CNIQUE Mécanique",
+          title: "dolani",
           initialRoute: AppPages.INITIAL,
           getPages: AppPages.routes,
           translations: Translation(),

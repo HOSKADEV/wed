@@ -4,6 +4,12 @@ import 'package:get/get.dart';
 
 class HomeController extends GetxController {
   final count = 0.obs;
+
+  RxList<String> listTitle1 = [
+    " \n"
+        "تطبيق 'دلني' هو منصة مخصصة لربط الأفراد الباحثين عن عمل مع الأشخاص أو الشركات التي تبحث عن عمال. يتم ذلك من خلال واجهة بسيطة وفعالة تتيح للمستخدمين إدخال البيانات الضرورية وإرسالها عبر تطبيق واتساب للمراجعة والتواصل المباشر."
+        " \n"
+  ].obs;
   @override
   void onInit() {
     super.onInit();

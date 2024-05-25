@@ -1,7 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:CNIQUE/app/core/styles/colors.dart';
+import 'package:dolani/app/core/styles/colors.dart';
 
 class ThemeStyles {
   static ThemeData lightTheme = ThemeData.light().copyWith(

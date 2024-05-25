@@ -13,7 +13,8 @@ abstract class Routes {
   static const SUBDETAILS = _Paths.SUBDETAILS;
   static const Description = _Paths.Description;
 
-  static const SEARCH = _Paths.SEARCH;
+  static const SEARCHJOB = _Paths.SEARCHJOB;
+  static const SEARCHWORKERS = _Paths.SEARCHWORKERS;
 }
 
 abstract class _Paths {
@@ -26,5 +27,6 @@ abstract class _Paths {
   static const DETAILS = '/details';
   static const SUBDETAILS = '/sub_details';
   static const Description = '/Description';
-  static const SEARCH = '/search';
+  static const SEARCHJOB = '/search_job';
+  static const SEARCHWORKERS = '/search_workers';
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:CNIQUE/app/core/constants/fonts_family_assets_constants.dart';
+import 'package:dolani/app/core/constants/fonts_family_assets_constants.dart';
 
 import 'colors.dart';
 

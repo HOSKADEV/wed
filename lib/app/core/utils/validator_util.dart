@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:CNIQUE/app/core/constants/strings_assets_constants.dart';
+import 'package:dolani/app/core/constants/strings_assets_constants.dart';
 // import 'package:travelPal//app/core/constants/strings_assets_constants.dart';
 // import 'package:tekcard/app/core/constants/strings_assets_constants.dart';
 import 'package:string_validator/string_validator.dart';

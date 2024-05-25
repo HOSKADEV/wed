@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:CNIQUE/app/core/styles/colors.dart';
-import 'package:CNIQUE/app/core/styles/text_styles.dart';
+import 'package:dolani/app/core/styles/colors.dart';
+import 'package:dolani/app/core/styles/text_styles.dart';
 
 class descriptionCardComponent extends StatelessWidget {
   final String title;
@@ -46,7 +46,7 @@ class descriptionCardComponent extends StatelessWidget {
             height: 170.h,
             width: double.infinity,
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(17.r),
+              borderRadius: BorderRadius.circular(20.r),
               child: Image.asset(
                 icon,
                 fit: BoxFit.fitWidth,

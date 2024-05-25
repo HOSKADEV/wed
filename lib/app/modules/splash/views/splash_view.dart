@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:CNIQUE/app/core/constants/logos_assets_constants.dart';
-import 'package:CNIQUE/app/core/styles/colors.dart';
-import 'package:CNIQUE/app/core/styles/text_styles.dart';
+import 'package:dolani/app/core/constants/logos_assets_constants.dart';
+import 'package:dolani/app/core/styles/colors.dart';
+import 'package:dolani/app/core/styles/text_styles.dart';
 
 import '../controllers/splash_controller.dart';
 
@@ -13,7 +13,7 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF6BD26),
+      backgroundColor: MainColors.whiteColor,
       body: SizedBox(
         width: double.infinity,
         child: Stack(
@@ -44,7 +44,7 @@ class SplashView extends GetView<SplashController> {
                           " 🤍 By HoskaDev 🤍",
                           style: TextStyles.mediumLabelTextStyle(context)
                               .copyWith(
-                                  color: Color(0xFFBE8C50), fontSize: 18.sp),
+                                  color: Color(0xFFC30B0B), fontSize: 18.sp),
                         ),
                       ],
                     ))),

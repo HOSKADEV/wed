@@ -1,4 +1,4 @@
-name: CNIQUE
+name: dolani
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
@@ -21,6 +21,7 @@ dependencies:
   external_app_launcher: ^4.0.0
   flutter:
     sdk: flutter
+  dropdown_button2: ^2.3.9
 
 dev_dependencies: 
   flutter_lints: ^4.0.0

@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:CNIQUE/app/core/constants/icons_assets_constants.dart';
-import 'package:CNIQUE/app/core/styles/colors.dart';
-import 'package:CNIQUE/app/core/styles/text_styles.dart';
+import 'package:dolani/app/core/constants/icons_assets_constants.dart';
+import 'package:dolani/app/core/styles/colors.dart';
+import 'package:dolani/app/core/styles/text_styles.dart';
 
 class PrimaryButtonComponent extends StatelessWidget {
   PrimaryButtonComponent(
@@ -120,7 +120,8 @@ class PrimaryButtonComponent extends StatelessWidget {
                   text,
                   style: TextStyles.buttonTextStyle(context).copyWith(
                       color: textColor ?? MainColors.whiteColor,
-                      fontSize: 20.sp),
+                      fontSize: 20.sp,
+                      fontWeight: FontWeight.bold),
                 ),
               ],
             ),
