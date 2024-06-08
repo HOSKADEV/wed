@@ -6,7 +6,7 @@ import 'package:dolani/app/routes/app_pages.dart';
 class SplashController extends GetxController {
   @override
   void onInit() {
-    Future.delayed(const Duration(seconds: 1), () {
+    Future.delayed(const Duration(seconds: 2), () {
       Get.offAllNamed(Routes.HOME);
     });
     super.onInit();
